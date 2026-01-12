@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Breathing Exercise</title>
+
+  <!-- Font Awesome Icons -->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
+
+
+  <!-- Main Styles -->
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+  <div class="app">
+    <div id="homeBtn" class="home-icon">
+      <i class="fa-solid fa-house"></i>
+    </div>
+
+
+    <!-- SCREEN 1 -->
+    <section class="screen active" id="landing">
+      <h1>Are you ready to relax?</h1>
+
+      <button class="play-btn" id="playBtn">
+        <i class="fa-solid fa-play"></i>
+      </button>
+
+      <button class="about-btn">About</button>
+    </section>
+
+
+    <!-- SCREEN 2 -->
+    <section class="screen" id="options">
+      <button class="option-btn" data-seconds="3">3 seconds</button>
+      <button class="option-btn" data-seconds="4">4 seconds</button>
+      <button class="option-btn" data-seconds="5">5 seconds</button>
+
+    </section>
+
+
+    <!-- SCREEN 3: EXERCISE -->
+    <section class="screen" id="exercise">
+      <div id="water"></div>
+      <div class="phase-text" id="phaseText">Inhale</div>
+
+       <button id="startBtn" class="start-btn">
+          Start <i class="fa-solid fa-play"></i>
+      </button>
+
+      <button id="retryBtn" class="retry-btn">
+        <i class="fa-solid fa-rotate-right"></i>
+      </button>
+    </section>
+
+
+    <!-- SCREEN 4: CONGRATULATIONS -->
+    <section class="screen" id="congrats">
+      <div class="congrats-content">
+        <h1>Congratulations! You did it!!!</h1>
+
+        <button id="continueBtn" class="continue-btn">
+          Continue <i class="fa-solid fa-play"></i>
+        </button>
+
+      </div>
+    </section>
+
+
+    <!-- ABOUT SHEET -->
+    <section class="screen" id="about">
+      <div class="about-flow">
+        <p>
+          This app is designed to give you a moment of calm through a short
+          breathing animation. For the number of seconds you choose, a gentle
+          ocean wave animation guides your breath: it rises as you inhale,
+          stays still while you hold your breath and then slowly falls as you
+          exhale. Once you feel ready just follow the waves and relax. Let’s begin!
+        </p>
+      </div>
+    </section>
+  </div>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
